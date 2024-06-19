@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'ABC Diatype';
+  src: url('../font/ABCDiatype-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+    color: var(--cb);
+    font-family: 'ABC Diatype', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: normal;
+}
+
+
+video {
+  max-width: 100%;
+  width: 1500px;
+}

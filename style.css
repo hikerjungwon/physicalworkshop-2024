@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'ABC Diatype';
+  src: url('asset/font/ABCDiatype-Black.woff2') format('woff2'),
+       url('asset/font/ABCDiatype-Black.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  font-size: 0.8rem; /* 전체 폰트 크기 조정 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: 'ABC Diatype', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.8rem; /* 전체 폰트 크기 조정 */
+  line-height: normal;
+  word-break: keep-all;
+  text-align: center;
+}
+
+a, a:link, a:visited {
+  color: #000000; /* 링크 폰트 색상 변경 */
+  font-size: 0.8rem; /* 링크 폰트 크기 조정 */
+  text-decoration: none;
+}
+
+.header_wrap {
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  word-break: keep-all;
+  font-weight: 100;
+  list-style-type: none;
+  z-index: 1000;
+  text-align: left;
+}
+
+.header_wrap li {
+  display: inline-block;
+  font-size: 0.8rem; /* 목록 폰트 크기 조정 */
+  font-weight: 700;
+  line-height: 1.3;
+  word-break: keep-all;
+  padding-left: 1vw;
+}
+
+.korean {
+  line-height: 1.4; /* 한글 행간 설정 */
+}
+
+.english {
+  line-height: 1.0; /* 영어 행간 설정 */
+  font-weight: 400; /* 영어 텍스트 폰트 웨이트 조정 */
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.background img {
+  max-width: 33.33%; /* 2:3 비율로 설정 */
+  max-height: 100%;
+}
+
+.background video {
+  width: 66.67%; /* 2:3 비율로 설정 */
+  height: 100%;
+  object-fit: cover;
+}
+
+.fixed-text {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 2rem; /* 폰트 크기 설정 */
+  text-align: left;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.5;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 1024px) {
+  .header_wrap li {
+    font-size: 0.8rem; /* 반응형 조정 */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_wrap li {
+    font-size: 0.8rem; /* 반응형 조정 */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header_wrap li {
+    font-size: 0.8rem; /* 반응형 조정 */
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header_wrap li {
+    font-size: 0.8rem; /* 반응형 조정 */
+  }
+}
